@@ -1,3 +1,13 @@
+<!-- This page will display groups the user belongs to.
+		It will seperate groups which the user has created,
+		and groups which the user has joined.
+
+	Here the user can choose to view the group information.
+
+	This file was created by the JCE group.
+-->
+
+
 <%@ page import="java.sql.*, java.util.*, java.io.*" %>
 <p><font size="10" color="Green">Your Group List,  ${username}</font></p>
 <br>
@@ -56,7 +66,7 @@ try{
 
 	<form action=Group_Info.jsp>
         <td> <input type=submit name="button" value="go in"></td>
-	<input type=hidden name="Info" value="<%= rs.getString(1) %>">
+	<input type=hidden name="Info" value= "<%= rs.getString(1) %>">
 	</form>
 	</tr>
 

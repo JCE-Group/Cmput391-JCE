@@ -1,3 +1,13 @@
+<!-- This page will be displayed when the user chooses
+		to browse the groups. It will give the option for the user
+		to create their own group. This page will display all groups
+		excluding the initialized 'private' and 'public' groups.
+
+	The user will be given options to browse the group information.
+
+	This file was created by the JCE group
+--> 
+
 <%@ page import="java.sql.*, java.util.*, java.io.*" %>
 <%!
 
@@ -32,11 +42,12 @@ public class Display {
 		menuString += "<input type = submit value = \"Add Group\">";
 		menuString += "</form>";
 		menuString += "<br>";
-
+		
 		menuString += "<form action = deleteGroup.jsp method = post style = text-align:center>";
 		menuString += "<input type = submit value = \"Delete Group\">";
 		menuString += "</form>";
 		menuString += "<br>";
+		
 		
 		menuString += "<form action = Search.jsp method = post >";
 		menuString += "<input type = text name = search>";
