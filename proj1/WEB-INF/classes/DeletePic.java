@@ -36,16 +36,23 @@ public class DeletePic extends HttpServlet
 	String picid  = request.getQueryString();
 	String query;
 	ServletOutputStream out = response.getOutputStream();
-	query = "DELETE FROM images WHERE photo_id=" + picid;
+	query = "DELETE FROM views WHERE photo_id=" + picid;
 
 	/*
 	 *   to execute the given query
 	 */
 
-	Connection conn = null;
+	Connection conn = null, con2 = null;
 	try {
 	    conn = getConnected();
+	    con2 = getConnected();
 	    Statement stmt = conn.createStatement();
+	    Statement stmt2 = con2.createStatement();
+
+		stmt2.executeUpdate(query);
+		con2.close();
+
+		query = "DELETE FROM images WHERE photo_id=" + picid;
 		stmt.executeUpdate(query);
 
 	    out.println("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0 " +
