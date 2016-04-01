@@ -32,6 +32,11 @@ public class Display {
 		menuString += "<input type = submit value = \"Add Group\">";
 		menuString += "</form>";
 		menuString += "<br>";
+
+		menuString += "<form action = deleteGroup.jsp method = post style = text-align:center>";
+		menuString += "<input type = submit value = \"Delete Group\">";
+		menuString += "</form>";
+		menuString += "<br>";
 		
 		menuString += "<form action = Search.jsp method = post >";
 		menuString += "<input type = text name = search>";
