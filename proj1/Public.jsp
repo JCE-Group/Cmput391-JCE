@@ -1,3 +1,11 @@
+<!--
+	This jsp file displays the top 5 images in the database, and has a display menu
+	on the top that allows users to navigate to other pages
+	This page also has a data button that allows admins to view statistical data from the
+	database.
+
+-->
+
 <%@ page import="java.sql.*, java.util.*, java.io.*" %>
 <%!
 public class Display {
@@ -19,6 +27,10 @@ public class Display {
 		
 		menuString += "<form action = Public.jsp method = post style = display:inline>";
 		menuString += "<input type = submit value = Public>";
+		menuString += "</form>";
+
+		menuString += "<form action = Admin.jsp method = post style = display:inline>";
+		menuString += "<input type = submit value = Data view>";
 		menuString += "</form>";
 
 		menuString += "<br>";
