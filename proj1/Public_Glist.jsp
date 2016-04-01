@@ -113,7 +113,7 @@ public class Display {
 
 			<form action=Group_Info.jsp>
 		       <td> <input type=submit name="button" value="go in"></td>
-			<input type=hidden name="Info" value=<%= resultSet.getString(1) %>>
+			<input type=hidden name="Info" value="<%= resultSet.getString(1) %>">
 			</form>
 		</tr>
 <%

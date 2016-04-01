@@ -63,7 +63,7 @@ try{
 %>
 
 
-<font size="10" color="Green"><%out.println(Gr_name);%></font>
+<font size="10" color="Green">"<%out.println(Gr_name);%>"</font>
 <!--<form action="demo_form.asp" id="usrform">-->
 <br>
 <font size="5" color="Green">Owner of the Group: <%out.println(rs.getString(1));%></font>

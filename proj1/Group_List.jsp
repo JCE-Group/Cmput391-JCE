@@ -56,7 +56,7 @@ try{
 
 	<form action=Group_Info.jsp>
         <td> <input type=submit name="button" value="go in"></td>
-	<input type=hidden name="Info" value=<%= rs.getString(1) %>>
+	<input type=hidden name="Info" value="<%= rs.getString(1) %>">
 	</form>
 	</tr>
 
@@ -81,7 +81,7 @@ while(rs2.next()){
 <td><font size="5"color="green"><%=rs2.getString(1) %></font></a></td>
 <form action=Group_Info.jsp>
         <td> <input type=submit name="button2" value="go in"></td>
-	<input type=hidden name="Info" value=<%= rs2.getString(1) %>>
+	<input type=hidden name="Info" value="<%= rs2.getString(1) %>">
 	</form>
 </tr>
 <%
