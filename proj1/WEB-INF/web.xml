@@ -85,4 +85,13 @@
         <servlet-name>delete_Group</servlet-name>
         <url-pattern>/delete_Group</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Group_List</servlet-name>
+        <servlet-class>Group_List</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Group_List</servlet-name>
+        <url-pattern>/Group_List</url-pattern>
+    </servlet-mapping>
 </web-app>
