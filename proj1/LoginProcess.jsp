@@ -55,7 +55,7 @@
 					out.println("Enter your username: <br>");
 					out.println("<input type = text name = username> <br>");
 					out.println("Enter your password: <br>");
-					out.println("<input type = text name = password>    <input type = submit name = Enter value = Enter> <br>");
+					out.println("<input type = password name = password>    <input type = submit name = Enter value = Enter> <br>");
 					out.println("</form>");
 					out.println("<font color = red> Error wrong user/pass </font>");
 					out.println("<br>");
