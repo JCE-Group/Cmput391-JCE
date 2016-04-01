@@ -67,4 +67,22 @@
         <servlet-name>add_Friend</servlet-name>
         <url-pattern>/add_Friend</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>remove_Friend</servlet-name>
+        <servlet-class>remove_Friend</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>remove_Friend</servlet-name>
+        <url-pattern>/remove_Friend</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>delete_Group</servlet-name>
+        <servlet-class>delete_Group</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>delete_Group</servlet-name>
+        <url-pattern>/delete_Group</url-pattern>
+    </servlet-mapping>
 </web-app>
