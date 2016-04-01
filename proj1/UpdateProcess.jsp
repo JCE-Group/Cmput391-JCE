@@ -20,7 +20,7 @@ if (subject.equals("")) {
 if (place.equals("")) {
 	place = "null";
 } else {
-	subject = "'" + place + "'";
+	place = "'" + place + "'";
 }
 
 if (desc.equals("")) {
