@@ -1,4 +1,10 @@
-
+<!-- This page displays the information on a selected group.
+		Images which are uploaded for this group will display
+		here.
+	
+	Users are given an option to add or remove friends into
+		group.
+-->
 <%@ page import="java.sql.*, java.util.*, java.io.*" %>
 <html>
 
@@ -58,11 +64,11 @@ try{
 
 
 <font size="10" color="Green"><%out.println(Gr_name);%></font>
-<form action="demo_form.asp" id="usrform">
+<!--<form action="demo_form.asp" id="usrform">-->
 <br>
 <font size="5" color="Green">Owner of the Group: <%out.println(rs.getString(1));%></font>
 
-</form>
+
 <br>
 
 
@@ -103,7 +109,7 @@ while(rs3.next()){
 }
 %></table>
 
-<font size="5"color="blue"> <b>Group Photo</b> </font>  </center>
+<center><font size="5"color="blue"> <b>Group Photo</b> </font>  </center>
 <%
 
 	//get photo id
