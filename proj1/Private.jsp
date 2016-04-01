@@ -81,10 +81,14 @@ public class Display {
 			}
 
 		try{ 
+			String sql;
 			m_con = DriverManager.getConnection(m_url, m_userName, m_password);
 			stmt = m_con.createStatement();
-
-			String sql ="SELECT photo_id FROM images WHERE owner_name = \'"+ sess.getAttribute("username")+"\'";
+			if(sess.getAttribute("username").equals("admin")) {
+				sql = "SELECT photo_id FROM images";			
+			} else {
+				sql ="SELECT photo_id FROM images WHERE owner_name = \'"+ sess.getAttribute("username")+"\'";
+			}
 			ResultSet resultSet = null;
 			int count = 0;
 			resultSet = stmt.executeQuery(sql);
